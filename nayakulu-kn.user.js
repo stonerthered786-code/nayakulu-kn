@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nayakulu RM Auto Fill KN
 // @namespace    thecircleapp.in
-// @version      2.0.0
+// @version      2.1
 // @description  Real Select2 role selection + RM text extraction + free text autofill
 // @match        https://www.thecircleapp.in/admin/user_roles/new
 // @match        https://www.thecircleapp.in/admin/user_roles/*/edit
@@ -613,8 +613,8 @@ const categories = [
 
         parentCircleId: '102344',
 
-        iconKeyword: 'congress ka',
-        iconMatch: 'CONGRESS KA WHITE'
+        iconKeyword: 'INC ka',
+        iconMatch: 'INC KA WHITE'
       },
 
       {
