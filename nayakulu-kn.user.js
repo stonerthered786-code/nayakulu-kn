@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nayakulu RM Auto Fill KN
 // @namespace    thecircleapp.in
-// @version      2.3
+// @version      2.4
 // @description  Real Select2 role selection + RM text extraction + free text autofill
 // @match        https://www.thecircleapp.in/admin/user_roles/new
 // @match        https://www.thecircleapp.in/admin/user_roles/*/edit
@@ -408,8 +408,8 @@
   }
 
   // remove commas only
-  const cleaned = text
-  .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+ const cleaned = text
+  .replace(/[^\p{L}\p{N}\s]/gu, '')
   .replace(/\s+/g, ' ')
   .trim();
 
