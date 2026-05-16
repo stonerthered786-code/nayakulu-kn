@@ -5,7 +5,7 @@
 // @description  Real Select2 role selection + RM text extraction + free text autofill
 // @match        https://www.thecircleapp.in/admin/user_roles/new
 // @match        https://www.thecircleapp.in/admin/user_roles/*/edit
-// @match https://www.thecircleapp.in/admin/circles/*
+// @match        https://www.thecircleapp.in/admin/circles/*
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==
