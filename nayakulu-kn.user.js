@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nayakulu RM Auto Fill KN
 // @namespace    thecircleapp.in
-// @version      2.6
+// @version      2.7
 // @description  Real Select2 role selection + RM text extraction + free text autofill
 // @match        https://www.thecircleapp.in/admin/user_roles/new
 // @match        https://www.thecircleapp.in/admin/user_roles/*/edit
@@ -600,89 +600,99 @@ window.location.href =
   }
 
   // ───────────────── BUTTON ─────────────────
-const categories = [
+  const categories = [
 
   {
     label: '⚡ Nayakaru',
     presets: [
-
       {
         id: '5781',
         text: 'ನಾಯಕರು',
         label: 'BJP Nayakaru',
-
         parentCircleId: '102341',
-
         iconKeyword: 'bjp ka',
         iconMatch: 'BJP KA WHITE'
       },
-
       {
         id: '5781',
         text: 'ನಾಯಕರು',
         label: 'Congress Nayakaru',
-
         parentCircleId: '102344',
-
         iconKeyword: 'inc ka',
         iconMatch: 'INC KA WHITE'
       },
-
       {
         id: '5781',
         text: 'ನಾಯಕರು',
         label: 'JDS Nayakaru',
-
         parentCircleId: '102347',
-
         iconKeyword: 'jds',
         iconMatch: 'JDS WHITE'
       }
+    ]
+  },
 
+  {
+    label: '⚡ Mukhandaru',
+    presets: [
+      {
+        id: '6028',
+        text: 'ಮುಖಂಡರು',
+        label: 'BJP Mukhandaru',
+        parentCircleId: '102341',
+        iconKeyword: 'bjp ka',
+        iconMatch: 'BJP KA WHITE'
+      },
+      {
+        id: '6028',
+        text: 'ಮುಖಂಡರು',
+        label: 'Congress Mukhandaru',
+        parentCircleId: '102344',
+        iconKeyword: 'inc ka',
+        iconMatch: 'INC KA WHITE'
+      },
+      {
+        id: '6028',
+        text: 'ಮುಖಂಡರು',
+        label: 'JDS Mukhandaru',
+        parentCircleId: '102347',
+        iconKeyword: 'jds',
+        iconMatch: 'JDS WHITE'
+      }
     ]
   },
 
   {
     label: '⚡ Karyakartaru',
     presets: [
-
       {
         id: '6040',
         text: 'ಕಾರ್ಯಕರ್ತರು',
         label: 'BJP Karyakartaru',
-
         parentCircleId: '102341',
-
         iconKeyword: 'bjp ka',
         iconMatch: 'BJP KA WHITE'
       },
-
       {
         id: '6040',
         text: 'ಕಾರ್ಯಕರ್ತರು',
         label: 'Congress Karyakartaru',
-
         parentCircleId: '102344',
-
-        iconKeyword: 'INC ka',
+        iconKeyword: 'inc ka',
         iconMatch: 'INC KA WHITE'
       },
-
       {
         id: '6040',
         text: 'ಕಾರ್ಯಕರ್ತರು',
         label: 'JDS Karyakartaru',
-
         parentCircleId: '102347',
-
         iconKeyword: 'jds',
         iconMatch: 'JDS WHITE'
       }
-
     ]
   }
 
-];
+];  
   function injectButton() {
 
     if (
